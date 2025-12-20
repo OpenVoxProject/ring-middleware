@@ -1,17 +1,15 @@
 # ring-middleware
 
-[![Build Status](https://travis-ci.org/puppetlabs/ring-middleware.png?branch=master)](https://travis-ci.org/puppetlabs/ring-middleware)
-
 This project was originally adapted from tailrecursion's
 [ring-proxy](https://github.com/tailrecursion/ring-proxy) middleware, and is
-meant for use with the [Trapperkeeper Jetty10 Webservice](https://github.com/puppetlabs/trapperkeeper-webserver-jetty10).  It also contains common ring middleware between Puppet projects and helpers to be used with the middleware.
+meant for use with the [Trapperkeeper Jetty10 Webservice](https://github.com/openvoxproject/trapperkeeper-webserver-jetty10).  It also contains common ring middleware between Puppet projects and helpers to be used with the middleware.
 
 ## Usage
 
 
 To use `ring-middleware`, add this project as a dependency in your leiningen project file:
 
-[![Clojars Project](http://clojars.org/puppetlabs/ring-middleware/latest-version.svg)](https://clojars.org/puppetlabs/ring-middleware)
+[![Clojars Project](http://clojars.org/org.openvoxproject/ring-middleware/latest-version.svg)](https://clojars.org/org.openvoxproject/ring-middleware)
 
 ## Schemas
 
@@ -124,7 +122,7 @@ The arguments are as follows:
 * `remote-uri-base`: The base URL that you want to proxy requests with the `proxied-path` prefix to
 * `http-opts`: An optional list of options for an http client. This is used by the handler returned by
   `wrap-proxy` when it makes a proxied request to a remote URI. For a list of available options, please
-  see the options defined for [clj-http-client](https://github.com/puppetlabs/clj-http-client).
+  see the options defined for [clj-http-client](https://github.com/openvoxproject/clj-http-client).
 
 For example, the following:
 
@@ -154,7 +152,7 @@ by the redirect is relative.
 #### SSL Support
 
 `wrap-proxy` supports SSL. To add SSL support, you can set SSL options in the `http-opts` map as you would in
-a request made with [clj-http-client](https://github.com/puppetlabs/clj-http-client). Simply set the
+a request made with [clj-http-client](https://github.com/openvoxproject/clj-http-client). Simply set the
 `:ssl-cert`, `:ssl-key`, and `:ssl-ca-cert` options in the `http-opts` map to be paths to your .pem files.
 
 ### wrap-with-certificate-cn
@@ -373,6 +371,4 @@ appropriate error is returned.  a `400 Bad Request` with appropriate messaging w
 
 ## Support
 
-Please log tickets and issues at our [Trapperkeeper Issue Tracker](https://tickets.puppetlabs.com/browse/TK).
-In addition there is a #trapperkeeper channel on Freenode.
-
+GitHub issues and PRs are welcome! Additionally, drop us a line in [the Vox Pupuli Slack](https://voxpupuli.slack.com).
