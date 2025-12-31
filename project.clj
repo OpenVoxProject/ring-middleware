@@ -14,7 +14,7 @@
   :pedantic? :abort
 
   :plugins [[lein-parent "0.3.7"]
-            [org.openvoxproject/i18n "0.9.3"]]
+            [org.openvoxproject/i18n "0.9.4"]]
 
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
                                      :username :env/CLOJARS_USERNAME
