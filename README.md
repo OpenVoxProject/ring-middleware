@@ -371,4 +371,4 @@ appropriate error is returned.  a `400 Bad Request` with appropriate messaging w
 
 ## Support
 
-GitHub issues and PRs are welcome! Additionally, drop us a line in [the Vox Pupuli Slack](https://voxpupuli.slack.com).
+GitHub issues and PRs are welcome! Additionally, drop us a line in [the Vox Pupuli Slack](https://voxpupuli.org/connect/).
