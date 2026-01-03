@@ -1,9 +1,10 @@
-(defproject org.openvoxproject/ring-middleware "2.0.6-SNAPSHOT"
-  :dependencies [[cheshire]]
+(defproject org.openvoxproject/ring-middleware "2.1.0-SNAPSHOT"
+  :dependencies [[cheshire]
+                 [org.openvoxproject/http-client]]
 
   :min-lein-version "2.7.1"
 
-  :parent-project {:coords [org.openvoxproject/clj-parent "7.5.1"]
+  :parent-project {:coords [org.openvoxproject/clj-parent "7.6.3"]
                    :inherit [:managed-dependencies]}
   :license {:name "Apache-2.0"
             :url "https://www.apache.org/licenses/LICENSE-2.0.txt"}
@@ -13,8 +14,8 @@
   ;; requires lein 2.2.0+.
   :pedantic? :abort
 
-  :plugins [[lein-parent "0.3.7"]
-            [org.openvoxproject/i18n "0.9.4"]]
+  :plugins [[lein-parent "0.3.9"]
+            [org.openvoxproject/i18n "1.0.2"]]
 
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
                                      :username :env/CLOJARS_USERNAME
