@@ -1,5 +1,6 @@
 (defproject org.openvoxproject/ring-middleware "2.1.0-SNAPSHOT"
-  :dependencies [[cheshire]]
+  :dependencies [[cheshire]
+                 [org.openvoxproject/http-client]]
 
   :min-lein-version "2.7.1"
 
