@@ -1,4 +1,4 @@
-(defproject org.openvoxproject/ring-middleware "2.1.0-SNAPSHOT"
+(defproject org.openvoxproject/ring-middleware "2.1.0"
   :dependencies [[cheshire]
                  [org.openvoxproject/http-client]]
 
