@@ -5,11 +5,14 @@
   ;; defined under :dependencies ends up causing an error due to :pedantic? :abort,
   ;; because it is a dep of a dep with a different version, move it here.
   :managed-dependencies [[org.clojure/clojure "1.12.4"]
+                         [org.clojure/tools.logging "1.3.1"]
+                         [org.clojure/tools.macro "0.2.1"]
                          [ring/ring-codec "1.3.0"]
                          [commons-codec "1.20.0"]
-                         [org.slf4j/slf4j-api "2.0.17"]]
+                         [org.slf4j/slf4j-api "2.0.17"]
+                         [cheshire "5.13.0"]]
 
-  :dependencies [[cheshire "5.10.2"]
+  :dependencies [[cheshire]
                  [org.openvoxproject/http-client "2.2.1"]]
 
   :min-lein-version "2.7.1"
