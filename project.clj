@@ -36,4 +36,4 @@
                                   [org.bouncycastle/bcpkix-jdk18on "1.83"]
                                   [org.openvoxproject/kitchensink "3.5.3" :classifier "test" :scope "test"]
                                   [org.openvoxproject/trapperkeeper "4.3.0" :classifier "test" :scope "test"]
-                                  [compojure "1.7.1"]]}})
+                                  [compojure "1.7.2"]]}})
