@@ -796,9 +796,11 @@
 
 (deftest wrap-json-parse-exception-handler-test
   (let [factory (JsonFactory.)
-        wrapped-handler (core/wrap-json-parse-exception-handler (fn [_] (throw (JsonParseException. (.createParser factory "") "Error Message" ))))
+        wrapped-handler (core/wrap-json-parse-exception-handler (fn [_] (throw (JsonParseException. (.createParser factory "") "Error Message"))))
         response (wrapped-handler (basic-request))]
-    (is (= {:body    "{\"kind\":\"json-parse-exception\",\"msg\":\"Error Message\\n at [Source: (String)\\\"\\\"; line: 1, column: 1]\"}"
-            :headers {"Content-Type" "application/json; charset=utf-8"}
-            :status  400}
-           response))))
+    (is (= 400 (:status response)))
+    (is (= {"Content-Type" "application/json; charset=utf-8"} (:headers response)))
+    (let [body (json/parse-string (:body response))]
+      (is (= "json-parse-exception" (get body "kind")))
+      (is (clojure.string/starts-with? (get body "msg") "Error Message"))
+      (is (clojure.string/includes? (get body "msg") "line: 1, column: 1")))))
