@@ -34,6 +34,6 @@
 
   :profiles {:dev {:dependencies [[org.openvoxproject/trapperkeeper-webserver-jetty10 "1.1.0"]
                                   [org.bouncycastle/bcpkix-jdk18on "1.83"]
-                                  [org.openvoxproject/kitchensink "3.5.3" :classifier "test" :scope "test"]
+                                  [org.openvoxproject/kitchensink "3.5.4" :classifier "test" :scope "test"]
                                   [org.openvoxproject/trapperkeeper "4.3.0" :classifier "test" :scope "test"]
                                   [compojure "1.7.2"]]}})
