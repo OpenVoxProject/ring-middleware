@@ -9,7 +9,7 @@
                          [commons-codec "1.20.0"]
                          [org.slf4j/slf4j-api "2.0.17"]]
 
-  :dependencies [[cheshire "5.10.2"]
+  :dependencies [[cheshire "5.13.0"]
                  [org.openvoxproject/http-client "2.2.1"]]
 
   :min-lein-version "2.7.1"
