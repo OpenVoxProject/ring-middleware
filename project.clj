@@ -5,7 +5,7 @@
   ;; defined under :dependencies ends up causing an error due to :pedantic? :abort,
   ;; because it is a dep of a dep with a different version, move it here.
   :managed-dependencies [[org.clojure/clojure "1.12.4"]
-                         [ring/ring-codec "1.1.2"]
+                         [ring/ring-codec "1.3.0"]
                          [commons-codec "1.15"]
                          [org.slf4j/slf4j-api "2.0.17"]]
 
