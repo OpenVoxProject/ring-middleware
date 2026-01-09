@@ -1,11 +1,19 @@
 (defproject org.openvoxproject/ring-middleware "2.1.1-SNAPSHOT"
-  :dependencies [[cheshire]
-                 [org.openvoxproject/http-client]]
+
+  ;; These are to enforce consistent versions across dependencies of dependencies,
+  ;; and to avoid having to define versions in multiple places. If a component
+  ;; defined under :dependencies ends up causing an error due to :pedantic? :abort,
+  ;; because it is a dep of a dep with a different version, move it here.
+  :managed-dependencies [[org.clojure/clojure "1.12.4"]
+                         [ring/ring-codec "1.1.2"]
+                         [commons-codec "1.15"]
+                         [org.slf4j/slf4j-api "2.0.17"]]
+
+  :dependencies [[cheshire "5.10.2"]
+                 [org.openvoxproject/http-client "2.2.0"]]
 
   :min-lein-version "2.7.1"
 
-  :parent-project {:coords [org.openvoxproject/clj-parent "7.6.3"]
-                   :inherit [:managed-dependencies]}
   :license {:name "Apache-2.0"
             :url "https://www.apache.org/licenses/LICENSE-2.0.txt"}
           
@@ -14,16 +22,15 @@
   ;; requires lein 2.2.0+.
   :pedantic? :abort
 
-  :plugins [[lein-parent "0.3.9"]
-            [org.openvoxproject/i18n "1.0.2"]]
+  :plugins [[org.openvoxproject/i18n "1.0.2"]]
 
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
                                      :username :env/CLOJARS_USERNAME
                                      :password :env/CLOJARS_PASSWORD
                                      :sign-releases false}]]
 
-  :profiles {:dev {:dependencies [[org.openvoxproject/trapperkeeper-webserver-jetty10]
-                                  [org.bouncycastle/bcpkix-jdk18on]
-                                  [org.openvoxproject/kitchensink nil :classifier "test" :scope "test"]
-                                  [org.openvoxproject/trapperkeeper nil :classifier "test" :scope "test"]
-                                  [compojure]]}})
+  :profiles {:dev {:dependencies [[org.openvoxproject/trapperkeeper-webserver-jetty10 "1.1.0"]
+                                  [org.bouncycastle/bcpkix-jdk18on "1.83"]
+                                  [org.openvoxproject/kitchensink "3.5.3" :classifier "test" :scope "test"]
+                                  [org.openvoxproject/trapperkeeper "4.3.0" :classifier "test" :scope "test"]
+                                  [compojure "1.7.1"]]}})
