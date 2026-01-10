@@ -10,7 +10,7 @@
                          [ring/ring-codec "1.3.0"]
                          [commons-codec "1.20.0"]
                          [org.slf4j/slf4j-api "2.0.17"]
-                         [cheshire "5.13.0"]
+                         [cheshire "6.1.0"]
                          [ring/ring-core "1.15.3"]]
 
   :dependencies [[cheshire]
