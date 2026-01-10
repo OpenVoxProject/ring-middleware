@@ -13,7 +13,7 @@
                          [cheshire "5.13.0"]]
 
   :dependencies [[cheshire]
-                 [org.openvoxproject/http-client "2.2.1"]]
+                 [org.openvoxproject/http-client "2.2.2"]]
 
   :min-lein-version "2.7.1"
 
