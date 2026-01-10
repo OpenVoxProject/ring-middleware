@@ -32,7 +32,7 @@
                                      :password :env/CLOJARS_PASSWORD
                                      :sign-releases false}]]
 
-  :profiles {:dev {:dependencies [[org.openvoxproject/trapperkeeper-webserver-jetty10 "1.1.0"]
+  :profiles {:dev {:dependencies [[org.openvoxproject/trapperkeeper-webserver-jetty10 "1.1.2"]
                                   [org.bouncycastle/bcpkix-jdk18on "1.83"]
                                   [org.openvoxproject/kitchensink "3.5.5" :classifier "test" :scope "test"]
                                   [org.openvoxproject/trapperkeeper "4.3.0" :classifier "test" :scope "test"]
