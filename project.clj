@@ -1,4 +1,4 @@
-(defproject org.openvoxproject/ring-middleware "2.1.2"
+(defproject org.openvoxproject/ring-middleware "2.1.3-SNAPSHOT"
 
   ;; These are to enforce consistent versions across dependencies of dependencies,
   ;; and to avoid having to define versions in multiple places. If a component
