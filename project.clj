@@ -25,7 +25,7 @@
   ;; requires lein 2.2.0+.
   :pedantic? :abort
 
-  :plugins [[org.openvoxproject/i18n "1.0.2"]]
+  :plugins [[org.openvoxproject/i18n "1.0.3"]]
 
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
                                      :username :env/CLOJARS_USERNAME
