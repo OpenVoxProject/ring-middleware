@@ -15,7 +15,7 @@
                          [org.openvoxproject/http-client "2.2.5"]
                          [org.openvoxproject/kitchensink "3.5.6" :classifier "test" :scope "test"]
                          [org.openvoxproject/trapperkeeper "4.3.4" :classifier "test" :scope "test"]
-                         [org.openvoxproject/trapperkeeper-webserver-jetty10 "1.1.4"]
+                         [org.openvoxproject/trapperkeeper-webserver-jetty10 "1.1.5"]
                          [org.slf4j/slf4j-api "2.0.17"]
                          [ring/ring-codec "1.3.0"]
                          [ring/ring-core "1.14.2"]]
