@@ -1,4 +1,4 @@
-(defproject org.openvoxproject/ring-middleware "2.1.7"
+(defproject org.openvoxproject/ring-middleware "2.1.8-SNAPSHOT"
 
   ;; Generally, try to keep version pins in :managed-dependencies and the libraries
   ;; this project actually uses in :dependencies, inheriting the version from
