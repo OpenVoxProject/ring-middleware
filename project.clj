@@ -13,7 +13,7 @@
                          [compojure "1.7.2"]
                          [org.bouncycastle/bcpkix-jdk18on "1.84"]
                          [org.openvoxproject/http-client "2.2.6"]
-                         [org.openvoxproject/kitchensink "3.5.6" :classifier "test" :scope "test"]
+                         [org.openvoxproject/kitchensink "3.5.7" :classifier "test" :scope "test"]
                          [org.openvoxproject/trapperkeeper "4.3.4" :classifier "test" :scope "test"]
                          [org.openvoxproject/trapperkeeper-webserver-jetty10 "1.1.5"]
                          [org.slf4j/slf4j-api "2.0.17"]
