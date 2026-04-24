@@ -12,7 +12,7 @@
                          [commons-codec "1.21.0"]
                          [compojure "1.7.2"]
                          [org.bouncycastle/bcpkix-jdk18on "1.84"]
-                         [org.openvoxproject/http-client "2.2.6"]
+                         [org.openvoxproject/http-client "2.2.7"]
                          [org.openvoxproject/kitchensink "3.5.7" :classifier "test" :scope "test"]
                          [org.openvoxproject/trapperkeeper "4.3.5" :classifier "test" :scope "test"]
                          [org.openvoxproject/trapperkeeper-webserver-jetty10 "1.1.7"]
