@@ -9,7 +9,7 @@
                          [org.clojure/tools.macro "0.2.2"]
 
                          [cheshire "6.2.0"]
-                         [commons-codec "1.21.0"]
+                         [commons-codec "1.22.0"]
                          [compojure "1.7.2"]
                          [org.bouncycastle/bcpkix-jdk18on "1.84"]
                          [org.openvoxproject/http-client "2.2.7"]
