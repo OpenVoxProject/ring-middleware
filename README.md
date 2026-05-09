@@ -2,7 +2,7 @@
 
 This project was originally adapted from tailrecursion's
 [ring-proxy](https://github.com/tailrecursion/ring-proxy) middleware, and is
-meant for use with the [Trapperkeeper Jetty10 Webservice](https://github.com/openvoxproject/trapperkeeper-webserver-jetty10).  It also contains common ring middleware between Puppet projects and helpers to be used with the middleware.
+meant for use with the [Trapperkeeper Webservice](https://github.com/openvoxproject/trapperkeeper-webserver).  It also contains common ring middleware between Puppet projects and helpers to be used with the middleware.
 
 ## Usage
 
