@@ -1,4 +1,4 @@
-(defproject org.openvoxproject/ring-middleware "2.1.9-SNAPSHOT"
+(defproject org.openvoxproject/ring-middleware "2.2.0-SNAPSHOT"
 
   ;; Generally, try to keep version pins in :managed-dependencies and the libraries
   ;; this project actually uses in :dependencies, inheriting the version from
@@ -15,7 +15,7 @@
                          [org.openvoxproject/http-client "2.2.7"]
                          [org.openvoxproject/kitchensink "3.5.7" :classifier "test" :scope "test"]
                          [org.openvoxproject/trapperkeeper "4.3.5" :classifier "test" :scope "test"]
-                         [org.openvoxproject/trapperkeeper-webserver-jetty10 "1.1.8"]
+                         [org.openvoxproject/trapperkeeper-webserver "10.0.0"]
                          [org.slf4j/slf4j-api "2.0.17"]
                          [ring/ring-codec "1.3.0"]
                          [ring/ring-core "1.14.2"]]
@@ -44,4 +44,4 @@
                                   [org.bouncycastle/bcpkix-jdk18on]
                                   [org.openvoxproject/kitchensink :classifier "test" :scope "test"]
                                   [org.openvoxproject/trapperkeeper :classifier "test" :scope "test"]
-                                  [org.openvoxproject/trapperkeeper-webserver-jetty10]]}})
+                                  [org.openvoxproject/trapperkeeper-webserver]]}})

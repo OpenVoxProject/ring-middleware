@@ -10,7 +10,7 @@
             [puppetlabs.ssl-utils.core :refer [pem->cert]]
             [puppetlabs.ssl-utils.simple :as ssl-simple]
             [puppetlabs.trapperkeeper.app :refer [get-service]]
-            [puppetlabs.trapperkeeper.services.webserver.jetty10-service :refer :all]
+            [puppetlabs.trapperkeeper.services.webserver.jetty-service :refer :all]
             [puppetlabs.trapperkeeper.testutils.bootstrap :refer [with-app-with-config]]
             [puppetlabs.trapperkeeper.testutils.logging :as logutils]
             [ring.util.response :as rr]
@@ -128,7 +128,7 @@
 (defmacro with-target-and-proxy-servers
   [{:keys [target proxy proxy-handler ring-handler endpoint target-endpoint]} & body]
   `(with-app-with-config proxy-target-app#
-     [jetty10-service]
+     [jetty-service]
      {:webserver ~target}
      (let [target-webserver# (get-service proxy-target-app# :WebserverService)]
        (add-ring-handler
@@ -144,7 +144,7 @@
         post-target-handler
         "/hello/post"))
      (with-app-with-config proxy-app#
-       [jetty10-service]
+       [jetty-service]
        {:webserver ~proxy}
        (let [proxy-webserver# (get-service proxy-app# :WebserverService)]
          (add-ring-handler proxy-webserver# ~proxy-handler ~endpoint))
