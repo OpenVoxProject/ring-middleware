@@ -11,7 +11,7 @@
                          [cheshire "6.2.0"]
                          [commons-codec "1.22.1"]
                          [compojure "1.7.2"]
-                         [org.bouncycastle/bcpkix-jdk18on "1.84"]
+                         [org.bouncycastle/bcpkix-jdk18on "1.85"]
                          [org.openvoxproject/http-client "2.4.1"]
                          [org.openvoxproject/kitchensink "3.5.8" :classifier "test" :scope "test"]
                          [org.openvoxproject/trapperkeeper "5.0.5" :classifier "test" :scope "test"]
