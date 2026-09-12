@@ -14,7 +14,7 @@
                          [org.bouncycastle/bcpkix-jdk18on "1.84"]
                          [org.openvoxproject/http-client "2.4.1"]
                          [org.openvoxproject/kitchensink "3.5.8" :classifier "test" :scope "test"]
-                         [org.openvoxproject/trapperkeeper "5.0.5" :classifier "test" :scope "test"]
+                         [org.openvoxproject/trapperkeeper "5.0.6" :classifier "test" :scope "test"]
                          [org.openvoxproject/trapperkeeper-webserver "12.1.1"]
                          [org.slf4j/slf4j-api "2.0.19"]
                          [ring/ring-codec "1.3.0"]
