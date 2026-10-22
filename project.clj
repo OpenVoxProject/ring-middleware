@@ -18,7 +18,7 @@
                          [org.openvoxproject/trapperkeeper-webserver "12.1.1"]
                          [org.slf4j/slf4j-api "2.0.20"]
                          [ring/ring-codec "1.3.0"]
-                         [ring/ring-core "1.15.5"]]
+                         [ring/ring-core "1.15.6"]]
 
   :dependencies [[cheshire]
                  [org.openvoxproject/http-client]]
